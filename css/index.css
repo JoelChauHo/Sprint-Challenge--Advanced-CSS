@@ -1,3 +1,13 @@
+.mabopad {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+}
+.wimabo {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -173,6 +183,11 @@ header div nav {
   padding: 5%;
   margin-left: 30%;
 }
+@media (max-width: 600px) {
+  header div nav {
+    flex-direction: column;
+  }
+}
 header a {
   font-size: 1.8rem;
   color: #6C5659;
@@ -185,6 +200,8 @@ header a {
 .heading-image1 {
   display: flex;
   justify-content: center;
+  width: 600px;
+  height: 150px;
   background-image: url('../img/main-header.png');
   background-size: cover;
 }
@@ -203,6 +220,16 @@ h1 {
   margin: 10px;
 }
 /* end of  Navigation code here for header & navigation/ button */
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -213,6 +240,14 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 600px) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -250,11 +285,9 @@ h1 {
   background-color: #22283A;
   color: #F6F7F8;
   border-radius: 5px;
-  width: 140px;
-  height: 50px;
-  padding: 5px;
-  margin: 10px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -265,13 +298,11 @@ h1 {
   height: auto;
   border-radius: 10px;
 }
-footer {
-  color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 600px) {
+  .sky {
+    display: none;
+  }
+  .launch {
+    display: none;
+  }
 }
