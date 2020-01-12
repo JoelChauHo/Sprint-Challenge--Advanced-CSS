@@ -24,7 +24,7 @@
       
       .mabo();
       width: 28%;
-      @media (max-width: 500px){
+      @media @mobile{
         .sky {display: none;
         }
         .launch{display:none}
@@ -59,12 +59,12 @@
     display: flex;
     justify-content: center;
 
-    @media (max-width: 500px){
+    @media @mobile{
       flex-direction: column-reverse;
        }
     .walk-text {
       width: 50%;
-      @media (max-width: 500px){
+      @media @mobile {
         width: 95%;
          }
 
@@ -84,7 +84,7 @@
           border-radius: 5px;
           .btnsize(30%,40px,5px,10px);
           font-size: 1.5rem;
-          @media (max-width: 500px){
+          @media @mobile {
             .btnsize(90%,40px,5px,10px);
             font-size: 1.2rem;
           }
@@ -103,7 +103,7 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      @media (max-width: 500px){
+      @media @mobile {
         width: 92%;
       margin-left: 4%;
       }
@@ -117,7 +117,7 @@
   }
   
 }// home
-@media (max-width: 500px){
+@media @mobile {
   .sky {display: none;
   }
   .launch{display:none}
