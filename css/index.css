@@ -241,6 +241,7 @@ p {
 }
 .sub-heading3a .nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   padding: 5%;
   margin-left: 20%;
@@ -252,14 +253,17 @@ p {
   letter-spacing: 1px;
   padding: 0 2%;
   justify-content: space-around;
+  font-size: 1.8rem;
+  color: #6C5659;
 }
 .sub-heading3a .nav .nav-item:hover {
-  color: #AFEEEE;
+  background: #ddd;
+  color: black;
 }
 .sub-heading3a .logo {
   display: flex;
   justify-content: center;
-  width: 25%;
+  width: 45%;
 }
 .sub-heading3b {
   height: 70vh;
