@@ -9,7 +9,7 @@
     
     margin: 20px 2.5%;
     border-radius: @bo-ra;
-    //20px
+    //20px to invoke -> mabo() or mabo(10px)
 
 }
 .btnsize(@w:40%,@h,@p,@m){
@@ -18,3 +18,19 @@
           padding: @p;
           margin: @m;
 }
+
+
+/*
+Parametric mixins can also have default values for their parameters:
+.border-radius(@radius: 5px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+We can invoke it like this now:
+
+#header {
+  .border-radius();
+}
+
+*/

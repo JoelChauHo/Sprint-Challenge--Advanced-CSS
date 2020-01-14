@@ -165,76 +165,236 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.fixedNavBar {
-  overflow: hidden;
+.heading4 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  padding: 8% 0;
+}
+@media (max-width: 500px) {
+  .heading4 {
+    flex-direction: column;
+  }
+}
+.heading4 .nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 0;
+  width: 100%;
+}
+.heading4 .nav .nav-item {
+  justify-content: space-between;
+  font-size: 1.8rem;
+  color: #6C5659;
+  background-color: #F6F6F6;
+}
+@media (max-width: 500px) {
+  .heading4 .nav .nav-item {
+    font-size: 1.2rem;
+    padding: 10% 0;
+  }
+}
+.heading4 .nav .nav-item:hover {
+  color: #AFEEEE;
+}
+.heading4 .logo {
   display: flex;
   justify-content: center;
-  background-color: #F6F6F6;
-  position: fixed;
-  top: 0;
-  width: 70%;
-  margin-left: 15%;
+  width: 45%;
+  margin: 0 auto;
 }
-.fixedNavBar a {
-  float: left;
+@media (max-width: 500px) {
+  .heading4 .logo {
+    margin-bottom: 15%;
+  }
+}
+.heading4b {
+  display: flex;
+  height: 70vh;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px auto;
+}
+@media (max-width: 500px) {
+  .heading4b {
+    flex-direction: column;
+    padding: 10% 0;
+  }
+}
+.heading4b .heading-text4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px auto;
+}
+.heading4b .heading-text4 .main-heading4 {
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 1.5rem;
+  width: min-content;
+  margin: 10px 10px;
 }
-.fixedNavBar a:hover {
+@media (max-width: 500px) {
+  .heading4b .heading-text4 .main-heading4 {
+    font-size: 40px;
+    margin: 10% 0;
+  }
+}
+.heading4b .heading4-img img {
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  width: 70%;
+}
+@media (max-width: 500px) {
+  .heading4b .heading4-img img {
+    width: 80%;
+    margin-bottom: 20%;
+  }
+}
+.heading-bgpic3 {
+  height: 70vh;
+  background-image: url('../img/main-header-bgpic.png');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #EEEEEE;
+  color: #6C5659;
+}
+.heading-bgpic3 nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+}
+.heading-bgpic3 nav a {
+  font-size: 1.8rem;
+  color: #6C5659;
+  background-color: #F6F6F6;
+}
+@media (max-width: 500px) {
+  .heading-bgpic3 nav a {
+    font-size: 1.2rem;
+  }
+}
+.heading-bgpic3 nav a:hover {
   background: #ddd;
   color: black;
 }
-/* header {
-    //border: solid;
-    height: 60vh;
-    background-position: center;
-    //background-size: 60%;
-    background-repeat: no-repeat;
-    background-color: #EEEEEE;
-    color: #6C5659;
-  }
-*/
+.heading-bgpic3 .heading-text3 {
+  margin-left: 40%;
+  text-align: center;
+  padding: 0 5%;
+}
 .heading {
+  /* header {
+      //border: solid;
+      height: 60vh;
+      background-position: center;
+      //background-size: 60%;
+      background-repeat: no-repeat;
+      background-color: #EEEEEE;
+      color: #6C5659;
+    }
+  */
+}
+.heading .sub-heading1 {
+  display: flex;
+}
+.heading .sub-heading1 .heading-text1 {
+  padding: 2%;
+}
+.heading .sub-heading1 .fixedNavBar {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  padding: 3%;
+  background-color: #F6F6F6;
+  position: fixed;
+  top: 0;
+  width: 60%;
+  margin-left: 35%;
+  /*
+         a {
+            color: blue;
+            &:hover {
+              color: green;
+            }
+          }
+        a:hover at the same level of a
+        &:hover called for the parent item
+        a:hover {
+          background: #ddd;
+          color: black;
+        }
+
+        */
+}
+.heading .sub-heading1 .fixedNavBar a {
+  float: left;
+  font-size: 1.8rem;
+  color: #6C5659;
+  background-color: #F6F6F6;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .heading .sub-heading1 .fixedNavBar a {
+    font-size: 1.2rem;
+  }
+}
+.heading .sub-heading1 .fixedNavBar a:hover {
+  background: #ddd;
+  color: black;
+}
+.heading .sub-heading2 {
   display: flex;
   flex-direction: column;
   padding: 2%;
   margin-top: 4%;
 }
-.heading .heading-text {
+.heading .sub-heading2 .heading-text2 {
   display: flex;
   flex-direction: column;
   padding: 1%;
   justify-content: center;
 }
-.heading .heading-text h2 {
+.heading .sub-heading2 .heading-text2 div h2 {
   display: flex;
   text-align: center;
   justify-content: center;
 }
+<<<<<<< HEAD
 @media (max-width: 500px) {
   .heading .heading-text h2 {
     padding-top: 10%;
   }
 }
 .heading nav {
+=======
+.heading .sub-heading2 .heading-text2 div nav {
+>>>>>>> 8b2bf7b410bd4577c2b9b69e676fded97630ce85
   display: flex;
   justify-content: space-around;
   padding: 5%;
   margin-left: 20%;
   width: 70%;
 }
-.heading nav a {
+.heading .sub-heading2 .heading-text2 div nav a {
   font-size: 1.8rem;
   color: #6C5659;
+  background-color: #F6F6F6;
 }
 @media (max-width: 500px) {
-  .heading nav a {
+  .heading .sub-heading2 .heading-text2 div nav a {
     font-size: 1.2rem;
   }
 }
+<<<<<<< HEAD
 .heading nav a:hover {
+=======
+.heading .sub-heading2 .heading-text2 div nav a:hover {
+>>>>>>> 8b2bf7b410bd4577c2b9b69e676fded97630ce85
   background: #ddd;
   color: black;
 }
