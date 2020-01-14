@@ -215,7 +215,7 @@ p {
 }
 @media (max-width: 500px) {
   .heading .heading-text h2 {
-    padding: 10%;
+    padding-top: 10%;
   }
 }
 .heading nav {
@@ -233,6 +233,10 @@ p {
   .heading nav a {
     font-size: 1.2rem;
   }
+}
+.heading nav a:hover {
+  background: #ddd;
+  color: black;
 }
 .heading .heading-image1 {
   display: flex;
